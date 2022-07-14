@@ -1,0 +1,5 @@
+codigo de color principal:
+#005f5b 
+color secundario:
+#fa9101
+negro: #27282a
