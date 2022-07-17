@@ -445,26 +445,37 @@ form{
 	position: fixed;
 	z-index: 999;
 	border-radius: 70%;
-	bottom: 1vh;
+	bottom: 2vh;
 	right: 5vh;
 	padding: 3vh;
 	transition: ease 0.3s;
-	width: 10vh;
+	width: 9vh;
 	animation: efecto 1.2s infinite;
 }
 
 .boton{
 	padding:center;
-	width: 6vh;
+	width: 5.5vh;
 	transition: ease 1s;
 	padding-right: 2vh;
+}
 
+@keyframes efecto{
+	0%{
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.60);
+	}
+	100%{
+		box-shadow: 0 0 0 2vh rgba(0, 0, 0, 0);
+	}
 }
 	}/*Para que el boton de whatsapp se vea mas chico en celulares*/
 
 /*/////////////////////////////////CONTACTO////////////////////////////*/
 
-
+.contactoo{
+	margin-top: 9vh;
+	padding-bottom:0;
+}
 
 .contacto-titulo{
 	text-align: center;
