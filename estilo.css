@@ -444,7 +444,7 @@ form{
 	border:1px solid white;
 	position: fixed;
 	z-index: 999;
-	border-radius: 70%;
+	border-radius: 90%;
 	bottom: 2vh;
 	right: 5vh;
 	padding: 3vh;
@@ -455,7 +455,7 @@ form{
 
 .boton{
 	padding:center;
-	width: 5.5vh;
+	width: 5vh;
 	transition: ease 1s;
 	padding-right: 2vh;
 }
