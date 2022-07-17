@@ -9,6 +9,11 @@
  --shadow-nav:#dde1e1;
 }
 
+*{
+	margin:0;
+	padding: 0;
+}
+
 html{
 	scroll-behavior: smooth;
 }
@@ -174,13 +179,14 @@ body{
 @media(min-width: 950px) {
 .nosotros-imagen{
 	width: 100%;
-	max-width: 380px;
-	margin-top: 14vh;
+	max-width: 400px;
+	margin-top: 15vh;
 }
 .nosotros{
+	background-color: #fa9101;
 	text-align:left;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	max-width: 200vh;
 	margin:0 auto;
 	margin-top: 7vh;
@@ -188,14 +194,24 @@ body{
 .nosotros-titulo{
 	font-size: 3rem;
 	padding: 0 2vh;
+	text-align: center;
+	color: white;
 
 }
 .nosotros-detalles{
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 1.1rem;
-	line-height: 1.4;
+	line-height: 2;
 	margin: 3vh 0;
 	border-left: black;
+	margin-top: 5vh;
+	padding: 5vh;
+	opacity: 0.9;
+	color: black;
+	border-radius: 20px 20px 20px 20px;
+	border-style: ;
+	height: 70vh;
+
 }
 
 
@@ -244,6 +260,8 @@ body{
 
 }
 
+
+
 .divv{
 	position: relative;
 
@@ -266,13 +284,67 @@ body{
 .ctm{
 	flex-direction: column;
 	align-items: flex-end;
+}
 
+.card:hover{
+	transform: scale(1.1);
+	transition: .2s;
 }
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////PRODUCTOS/////////////////////////////////////////////*/
 
+.productos-izq{
+	width: 50%;
+	height: 84vh;
+	background-color: var(--second-color);
+}
+
+.productos-der{
+	background: url(./imagenes/comida.jpg);
+	height: 100vh;
+	width: 50%;
+	background-repeat: no-repeat;
+}
+
+.productoss{
+	display: flex;
+}
+
+.productos-titulo{
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.productos-detalle{
+	color:black;
+	font-size: 1.2rem;
+	padding: 10px;
+}
+
+@media(max-width: 991px){
+.productoss{
+	flex-direction: column;
+}
+.productos-izq{
+	width: 100%;
+	height: auto;
+	background-color: var(--second-color);
+}
+.productos-der{
+	background: url(./imagenes/comida.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 80%;
+	margin-left: 14vh;
+}
+}
+/*
 .productos-imagen{
 	width: 80%;
 	max-width: 350px;
@@ -326,6 +398,8 @@ body{
 }
 }
 
+*/
+
 /*///////////////////////////////////////////////////////*/
 /*BOTON WHATSAPP*/
 .boton-w{
@@ -338,7 +412,7 @@ body{
 	right: 5vh;
 	padding: 3vh;
 	transition: ease 0.3s;
-	width: 11vh;
+	width: 14vh;
 	animation: efecto 1.2s infinite;
 }
 
@@ -349,7 +423,7 @@ body{
 
 .boton{
 	padding:center;
-	width: 10vh;
+	width: 8vh;
 	transition: ease 1s;
 
 }
@@ -365,4 +439,150 @@ body{
 form{
 	font-weight: bold;
 } 
+
+@media(){}/*Para que el boton de whatsapp se vea mas chico en celulares*/
+
+/*/////////////////////////////////CONTACTO////////////////////////////*/
+
+
+
+.contacto-titulo{
+	text-align: center;
+	color: #005f5b;
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: 'Cinzel', serif;
+
+}
+
+.ubicacion{
+	display: flex;
+	justify-content: space-around;
+
+}
+
+
+ .texto{
+ 	flex-direction: center;
+ 	color: black;
+ }
+
+.cantacto-horario{
+	text-align: center;
+	padding-top: 10vh;
+	font-size: 2.5rem;
+	color:#fa9101;
+}
+
+.contacto-lista{
+	list-style: none;
+	padding-top: 8vh;
+}
+
+.direccionn{
+	text-align: center;
+}
+.direccion{
+	text-align: center;
+	padding-top: 1vh;
+	font-size: 2.5rem;
+	color: #fa9101;
+}
+.calle{
+	color: black;
+	font-weight: bold;
+}
+
+@media(max-width: 575px){
+.ubicacion{
+flex-direction: column;
+}
+.contacto-lista{
+	list-style: none;
+	padding-top: 3vh;
+	text-align: center;
+}
+.mapa{
+	width: 80%;
+	margin-left: 10vh;
+}
+}
+
+/*//////////////////////////////////////////*/
+/*/////////////////FOOTER////////////////////*/
+.img1{
+	width: 180px;
+}
+.pie-pagina{
+	width: 100%;
+	background-color:#b2d6d4; 
+	box-shadow: 15px 4px 5px var(--shadow-nav);
+}
+
+ .pie-pagina .grupo-1{
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: 50px;
+	padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pie-pagina .grupo-1 .box .figure .img{
+	width: 280px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+	font-weight: bold;
+	margin-bottom: 25px;
+	font-size: 20px;
+	color: var(--principal-color);
+
+}
+
+.pie-pagina .grupo-1 .box p{
+	color: var(--text-color);
+	margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+	display: inline-block;
+	text-decoration: none;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color:black;
+	margin-right: 10px;
+	background-color: #b2d6d4;
+	text-align: center;
+	transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-2{
+	background: #dde1e1;
+	color: black;
+	padding: 15px 10px;
+	text-align: center;
+}
+
+@media screen and (max-width: 800px ){
+.pie-pagina .grupo-1{
+	width: 90%;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 30px;
+	padding: 35px 0px;
+}
+.img1{
+	width: 150px;
+}
+}
 
